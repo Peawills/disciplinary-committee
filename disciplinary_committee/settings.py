@@ -8,6 +8,12 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
+
+ git add .
+>> git commit -m "Removed Heroku-specific configurations"
+>> git push origin main
+
+
 """
 
 from pathlib import Path
@@ -26,7 +32,7 @@ SECRET_KEY = 'django-insecure-^$a5h=21)_y3@di998awk8sk1d@!c%+s3i%8hyy!xec)#)lo%h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
